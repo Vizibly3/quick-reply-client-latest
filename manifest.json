@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Reply",
+  "description": "Generate smart, mood-based comments for any social media post with just a click.Customize the tone, length, hashtags, and emojis to create the perfect reply every time.",
+  "version": "1.0",
+  "permissions": [
+    "downloads",
+    "scripting",
+    "activeTab",
+    "tabs",
+    "clipboardWrite",
+    "offscreen",
+    "debugger"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "https://www.linkedin.com/*",
+    "https://jatinonline.com/quickreply/*",
+    "http://localhost:3000/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.obf.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content_linkedin.obf.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "js": ["content_facebook.obf.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.js.encrypted.js",
+        "content_linkedin.js.encrypted.js"
+      ],
+      "matches": ["https://www.linkedin.com/*", "https://www.instagram.com/*"]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Assistant</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            width: 300px;
+            padding: 16px;
+            margin: 0;
+            color: #262626;
+            background: #fafafa;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #dbdbdb;
+            padding-bottom: 12px;
+        }
+
+        .logo {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .button {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .feature-container {
+            margin-top: 12px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .feature-icon {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #8e8e8e;
+            text-align: center;
+            margin-top: 16px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">📸✨</div>
+        <h1>Instagram Assistant</h1>
+    </div>
+
+    <div class="feature-container">
+        <div class="feature">
+            <div class="feature-icon">⬇️</div>
+            <div class="feature-text">Download images with one click</div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">💬</div>
+            <div class="feature-text">Generate AI comments instantly</div>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🔁</div>
+            <div class="feature-text">Repost images easily</div>
+        </div>
+    </div>
+
+    <button id="refresh" class="button">Refresh Buttons</button>
+
+    <div class="footer">
+        Your Instagram browsing companion
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+
+</body>
+
+</html>

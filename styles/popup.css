@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.ig-story-repost-button {
+    transition: all 0.2s ease;
+}
+
+.ig-story-repost-button:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.custom-download-button,
+.custom-comment-button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.custom-download-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.custom-comment-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-download-button:hover {
+    background-color: #218838;
+}
+
+.custom-comment-button:hover {
+    background-color: #0056b3;
+}
