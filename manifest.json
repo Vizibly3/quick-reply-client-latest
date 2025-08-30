@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Quick Reply",
-  "description": "Generate smart, mood-based comments for any social media post with just a click.Customize the tone, length, hashtags, and emojis to create the perfect reply every time.",
+  "description": "Generate smart, mood-based comments in one click. Customize tone, length, hashtags & emojis for the perfect reply.",
   "version": "1.0",
   "permissions": [
     "downloads",
